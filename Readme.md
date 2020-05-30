@@ -3,6 +3,9 @@
 
 protoc --proto_path=D:/go/src/micro_test/proto/proto/ --micro_out=./sessions/ --go_out=./sessions/ sessions.proto
 
+注意：
+go.mod后面添加：replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
+
 搭建方法
 
 一、什么是go-micro
